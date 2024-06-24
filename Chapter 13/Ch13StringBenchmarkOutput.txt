@@ -1,0 +1,102 @@
+/Users/edljr/Library/Java/JavaVirtualMachines/openjdk-18.0.2/Contents/Home/bin/java -javaagent:/Users/edljr/Library/Caches/JetBrains/IdeaIC2022.1/testAgent/intellij-coverage-agent-1.0.656.jar=/private/var/folders/wy/tskwygvx1fv_g43594869xg80000gn/T/coverageargs -Didea.new.sampling.coverage=true -Dcoverage.ignore.private.constructor.util.class=true -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60836:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/edljr/three19 Dropbox/Edward Lavieri/edljr - Publications/PackT Publishing/High Performance with Java/Code/Chapter13/Ch13StringReversal/target/classes:/Users/edljr/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar:/Users/edljr/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/edljr/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/edljr/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.37/jmh-generator-annprocess-1.37.jar org.example.Ch13StringBenchmark
+---- IntelliJ IDEA coverage runner ---- 
+sampling ...
+include patterns:
+org\.example\..*
+exclude patterns:
+# JMH version: 1.37
+# VM version: JDK 18.0.2, OpenJDK 64-Bit Server VM, 18.0.2+9-61
+# VM invoker: /Users/edljr/Library/Java/JavaVirtualMachines/openjdk-18.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Users/edljr/Library/Caches/JetBrains/IdeaIC2022.1/testAgent/intellij-coverage-agent-1.0.656.jar=/private/var/folders/wy/tskwygvx1fv_g43594869xg80000gn/T/coverageargs -Didea.new.sampling.coverage=true -Dcoverage.ignore.private.constructor.util.class=true -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60836:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.example.Ch13StringBenchmark.reverseManually
+
+# Run progress: 0.00% complete, ETA 00:03:20
+# Fork: 1 of 1
+---- IntelliJ IDEA coverage runner ---- 
+sampling ...
+include patterns:
+org\.example\..*
+exclude patterns:
+# Warmup Iteration   1: 14573248.096 ops/s
+# Warmup Iteration   2: 14921878.772 ops/s
+# Warmup Iteration   3: 15017768.305 ops/s
+# Warmup Iteration   4: 14762132.192 ops/s
+# Warmup Iteration   5: 13859460.847 ops/s
+Iteration   1: 14136889.839 ops/s
+Iteration   2: 14176626.251 ops/s
+Iteration   3: 14626462.107 ops/s
+Iteration   4: 14591517.446 ops/s
+Iteration   5: 14748430.089 ops/s
+Class transformation time: 0.022049417s for 739 classes or 2.9836829499323413E-5s per class
+
+
+Result "org.example.Ch13StringBenchmark.reverseManually":
+  14455985.146 ±(99.9%) 1076836.292 ops/s [Average]
+  (min, avg, max) = (14136889.839, 14455985.146, 14748430.089), stdev = 279650.965
+  CI (99.9%): [13379148.854, 15532821.439] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 18.0.2, OpenJDK 64-Bit Server VM, 18.0.2+9-61
+# VM invoker: /Users/edljr/Library/Java/JavaVirtualMachines/openjdk-18.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Users/edljr/Library/Caches/JetBrains/IdeaIC2022.1/testAgent/intellij-coverage-agent-1.0.656.jar=/private/var/folders/wy/tskwygvx1fv_g43594869xg80000gn/T/coverageargs -Didea.new.sampling.coverage=true -Dcoverage.ignore.private.constructor.util.class=true -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60836:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.example.Ch13StringBenchmark.reverseWithStringBuilder
+
+# Run progress: 50.00% complete, ETA 00:01:40
+# Fork: 1 of 1
+---- IntelliJ IDEA coverage runner ---- 
+sampling ...
+include patterns:
+org\.example\..*
+exclude patterns:
+# Warmup Iteration   1: 27070629.364 ops/s
+# Warmup Iteration   2: 27268466.715 ops/s
+# Warmup Iteration   3: 29697044.371 ops/s
+# Warmup Iteration   4: 29416341.123 ops/s
+# Warmup Iteration   5: 29016739.935 ops/s
+Iteration   1: 28775766.401 ops/s
+Iteration   2: 28987213.558 ops/s
+Iteration   3: 28544375.438 ops/s
+Iteration   4: 27531629.817 ops/s
+Iteration   5: 28039904.126 ops/s
+Class transformation time: 0.026790479s for 737 classes or 3.635071777476255E-5s per class
+
+
+Result "org.example.Ch13StringBenchmark.reverseWithStringBuilder":
+  28375777.868 ±(99.9%) 2268015.114 ops/s [Average]
+  (min, avg, max) = (27531629.817, 28375777.868, 28987213.558), stdev = 588996.323
+  CI (99.9%): [26107762.753, 30643792.982] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:21
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                      Mode  Cnt         Score         Error  Units
+Ch13StringBenchmark.reverseManually           thrpt    5  14455985.146 ± 1076836.292  ops/s
+Ch13StringBenchmark.reverseWithStringBuilder  thrpt    5  28375777.868 ± 2268015.114  ops/s
+Class transformation time: 0.011536673s for 923 classes or 1.249910400866739E-5s per class
+
+Process finished with exit code 0
