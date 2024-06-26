@@ -5,7 +5,7 @@ public class Corgi {
     private int weight;
 
     // Constructor
-    public Corgi(String name, int age), int weight {
+    public Corgi(String name, int age, int weight) {
         this.name = name;
         this.age = age;
         this.weight = weight;
